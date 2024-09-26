@@ -1,0 +1,14 @@
+#vbox {
+    -fx-background-color: #d3d3d3; /* Light Blue background */
+}
+
+#release_date_label {
+
+}
+
+#main_label {
+    -fx-text-fill: #e15353; /* Test color */
+}
+.centered-column .table-cell {
+    -fx-alignment: CENTER;
+}
