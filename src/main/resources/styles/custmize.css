@@ -12,3 +12,17 @@
 .centered-column .table-cell {
     -fx-alignment: CENTER;
 }
+.tooltip {
+    -fx-background-color: #1e1c1c; /* Dark background */
+    -fx-text-fill: white; /* White text */
+    -fx-font-size: 18px; /* Font size */
+    -fx-padding: 10px; /* Padding around the text */
+    -fx-border-radius: 5px; /* Rounded corners */
+    -fx-background-radius: 5px; /* Rounded corners */
+    -fx-opacity: 0.9; /* Slightly transparent */
+}
+
+/* Optional: Change the tooltip arrow color */
+.tooltip .tooltip-arrow {
+    -fx-background-color: #595757; /* Match the background color */
+}

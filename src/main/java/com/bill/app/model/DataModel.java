@@ -1,27 +1,26 @@
 package com.bill.app.model;
 
-import javafx.beans.property.SimpleStringProperty;
-import javafx.beans.property.StringProperty;
+import javafx.beans.property.*;
 
 public class DataModel {
     private final StringProperty vendorName;
     private final StringProperty productName;
     private final StringProperty vendorAddress;
-    private final StringProperty VATNumber;
-    private final StringProperty amount;
-    private final StringProperty price;
-    private final StringProperty VATAmount;
-    private final StringProperty totalPrice;
+    private final FloatProperty VATNumber;
+    private final FloatProperty amount;
+    private final FloatProperty price;
+    private final FloatProperty VATAmount;
+    private final FloatProperty totalPrice;
 
     public DataModel() {
         this.productName = new SimpleStringProperty();
         this.vendorName = new SimpleStringProperty();
         this.vendorAddress = new SimpleStringProperty();
-        this.VATNumber = new SimpleStringProperty();
-        this.amount = new SimpleStringProperty();
-        this.price = new SimpleStringProperty();
-        this.VATAmount = new SimpleStringProperty();
-        this.totalPrice = new SimpleStringProperty();
+        this.VATNumber = new SimpleFloatProperty();
+        this.amount = new SimpleFloatProperty();
+        this.price = new SimpleFloatProperty();
+        this.VATAmount = new SimpleFloatProperty();
+        this.totalPrice = new SimpleFloatProperty();
     }
 
     // Getters and setters for each property
@@ -52,43 +51,43 @@ public class DataModel {
         this.vendorAddress.set(vendorAddress);
     }
 
-    public StringProperty VATNumberProperty() {
+    public FloatProperty VATNumberProperty() {
         return VATNumber;
     }
 
-    public void setVATNumber(String VATNumber) {
+    public void setVATNumber(float VATNumber) {
         this.VATNumber.set(VATNumber);
     }
 
-    public StringProperty amountProperty() {
+    public FloatProperty amountProperty() {
         return amount;
     }
 
-    public void setAmount(String amount) {
+    public void setAmount(float amount) {
         this.amount.set(amount);
     }
 
-    public StringProperty priceProperty() {
+    public FloatProperty priceProperty() {
         return price;
     }
 
-    public void setPrice(String price) {
+    public void setPrice(float price) {
         this.price.set(price);
     }
 
-    public StringProperty VATAmountProperty() {
+    public FloatProperty VATAmountProperty() {
         return VATAmount;
     }
 
-    public void setVATAmount(String VATAmount) {
+    public void setVATAmount(float VATAmount) {
         this.VATAmount.set(VATAmount);
     }
 
-    public StringProperty totalPriceProperty() {
+    public FloatProperty totalPriceProperty() {
         return totalPrice;
     }
 
-    public void setTotalPrice(String totalPrice) {
+    public void setTotalPrice(float totalPrice) {
         this.totalPrice.set(totalPrice);
     }
 }

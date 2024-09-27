@@ -14,7 +14,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox fx:id="vbox" alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="947.0" prefWidth="1163.0" spacing="10.0" stylesheets="@../../../styles/custmize.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.bill.app.view.billMainController">
+<VBox fx:id="vbox" alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="947.0" prefWidth="1163.0" spacing="10.0" stylesheets="@../../../styles/custmize.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.bill.app.view.BillMainController">
    <!-- Top Container for Centered Label -->
    <HBox alignment="CENTER" prefWidth="1163.0" spacing="10.0">
       <!-- Centered Label -->
@@ -85,7 +85,7 @@
       <padding>
          <Insets left="1.0" right="15.0" />
       </padding>
-      <TextField fx:id="VATNumberTextField" prefHeight="25.0" prefWidth="167.0">
+      <TextField fx:id="VATNumberTextField" onKeyTyped="#validateFloatInput" prefHeight="25.0" prefWidth="167.0">
          <opaqueInsets>
             <Insets />
          </opaqueInsets>
@@ -101,7 +101,7 @@
             <Insets right="15.0" />
          </HBox.margin>
       </Label>
-      <TextField fx:id="vendorNameTextField" prefHeight="25.0" prefWidth="167.0">
+      <TextField fx:id="vendorNameTextField"  prefHeight="25.0" prefWidth="167.0">
          <opaqueInsets>
             <Insets />
          </opaqueInsets>
@@ -137,7 +137,7 @@
       <padding>
          <Insets left="1.0" right="15.0" />
       </padding>
-      <TextField fx:id="totalPriceTxtField" prefHeight="25.0" prefWidth="93.0">
+      <TextField fx:id="totalPriceTxtField" onKeyTyped="#validateFloatInput" prefHeight="25.0" prefWidth="93.0">
          <opaqueInsets>
             <Insets />
          </opaqueInsets>
@@ -153,7 +153,7 @@
             <Insets right="59.0" />
          </HBox.margin>
       </Label>
-      <TextField fx:id="VATTextField" prefHeight="25.0" prefWidth="89.0">
+      <TextField fx:id="VATTextField" onKeyTyped="#validateFloatInput" prefHeight="25.0" prefWidth="89.0">
          <opaqueInsets>
             <Insets />
          </opaqueInsets>
@@ -169,7 +169,7 @@
             <Insets left="-32.0" right="86.0" top="10.0" />
          </HBox.margin>
       </Label>
-      <TextField fx:id="priceTextField" prefHeight="25.0" prefWidth="88.0">
+      <TextField fx:id="priceTextField" onKeyTyped="#validateFloatInput" prefHeight="25.0" prefWidth="88.0">
          <opaqueInsets>
             <Insets />
          </opaqueInsets>
@@ -185,7 +185,7 @@
             <Insets left="-27.0" right="35.0" top="10.0" />
          </HBox.margin>
       </Label>
-      <TextField fx:id="amountTextField" prefHeight="25.0" prefWidth="75.0">
+      <TextField fx:id="amountTextField" onKeyTyped="#validateFloatInput" prefHeight="25.0" prefWidth="75.0">
          <opaqueInsets>
             <Insets />
          </opaqueInsets>
@@ -204,32 +204,31 @@
    </HBox>
    <HBox alignment="TOP_CENTER" prefHeight="61.0" prefWidth="948.0" spacing="10.0">
       <opaqueInsets>
-         <Insets/>
+         <Insets />
       </opaqueInsets>
       <padding>
-         <Insets left="1.0" right="15.0"/>
+         <Insets left="1.0" right="15.0" />
       </padding>
       <VBox.margin>
-         <Insets top="-15.0"/>
+         <Insets top="-15.0" />
       </VBox.margin>
       <TextField fx:id="productNameTxtField" prefHeight="25.0" prefWidth="167.0">
          <opaqueInsets>
-            <Insets/>
+            <Insets />
          </opaqueInsets>
          <HBox.margin>
-            <Insets right="-3.0" top="16.0"/>
+            <Insets right="-3.0" top="16.0" />
          </HBox.margin>
       </TextField>
-      <Label fx:id="productNameLabel" contentDisplay="CENTER" text="اســـم&#10;المنـــتج" textAlignment="CENTER"
-             textFill="#44c263">
+      <Label fx:id="productNameLabel" contentDisplay="CENTER" text="اســـم&#10;المنـــتج" textAlignment="CENTER" textFill="#44c263">
          <font>
-            <Font name="System Bold" size="18.0"/>
+            <Font name="System Bold" size="18.0" />
          </font>
          <padding>
-            <Insets right="19.0"/>
+            <Insets right="19.0" />
          </padding>
          <HBox.margin>
-            <Insets right="-100.0"/>
+            <Insets right="-100.0" />
          </HBox.margin>
       </Label>
    </HBox>

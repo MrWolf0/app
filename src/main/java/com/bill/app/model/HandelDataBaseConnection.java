@@ -82,4 +82,20 @@ public class HandelDataBaseConnection {
             }
         }
     }
+    public void creatingTable()
+    {
+        String sqlQuary  = "CREATE TABLE IF NOT EXISTS bill_info ("
+                + "	id INTEGER PRIMARY KEY AUTOINCREMENT,"
+                + "	address text NOT NULL,"
+                + "	name text NOT NULL,"
+                + "	address text NOT NULL,"
+                + "	VAT_number INTEGER NOT NULL,"
+                + "	quantity INTEGER NOT NULL,"
+                + "	price REAL NOT NULL,"
+                + "	VAT_amount REAL NOT NULL,"
+                + "	total_price text NOT NULL,"
+                + "	product_name text NOT NULL,"
+                + "	capacity REAL"
+                + ");";
+    }
 }
