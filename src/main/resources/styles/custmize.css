@@ -9,9 +9,11 @@
 #main_label {
     -fx-text-fill: #e15353; /* Test color */
 }
+
 .centered-column .table-cell {
     -fx-alignment: CENTER;
 }
+
 .tooltip {
     -fx-background-color: #1e1c1c; /* Dark background */
     -fx-text-fill: white; /* White text */
@@ -22,7 +24,12 @@
     -fx-opacity: 0.9; /* Slightly transparent */
 }
 
-/* Optional: Change the tooltip arrow color */
-.tooltip .tooltip-arrow {
-    -fx-background-color: #595757; /* Match the background color */
+#summaryGridPain {
+    -fx-background-color: #b6b5b5;
+    -fx-border-width: 2px; /* Optional: Sets the border width */
 }
+
+.table-cell {
+    -fx-alignment: center;
+}
+
